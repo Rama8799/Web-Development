@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 20px;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bdc3c7), to(#2c3e50));
+  background: linear-gradient(#bdc3c7, #2c3e50);
+  font-family: sans-serif;
+}
+
+#calci {
+  background: -webkit-gradient(linear, left top, left bottom, from(#c33764), to(#1d2671));
+  background: linear-gradient(#c33764, #1d2671);
+  margin-left: 20px;
+  width: 290px;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: 3px 3px 5px black;
+          box-shadow: 3px 3px 5px black;
+}
+
+#display {
+  border-radius: 30px;
+  border: none;
+  width: 258px;
+  height: 50px;
+  margin-bottom: 1rem;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 400;
+  outline: none;
+  border: 2px solid white;
+  text-align: center;
+}
+
+.num-btn {
+  border-radius: 30px;
+  height: 55px;
+  width: 55px;
+  border: none;
+  padding: 1rem;
+  margin: 0 0.5rem 0.5rem 0;
+  font-size: 20;
+  font-weight: 300;
+  font-family: sans-serif;
+}
+
+.op-btn {
+  border-radius: 30px;
+  height: 55px;
+  width: 55px;
+  border: none;
+  padding: 1rem;
+  font-size: 17px;
+}
+
+.zero-btn {
+  width: 123px;
+  border-radius: 20px;
+  border: none;
+  padding: 1rem;
+  margin-right: 8px;
+}
+
+.op-btn1 {
+  border-radius: 30px;
+  height: 55px;
+  width: 55px;
+  border: none;
+  padding: 1rem;
+  font-size: 17px;
+  margin-left: 5px;
+}
+
+.op-btn1:hover, .op-btn:hover {
+  background-color: #8989db;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <title>Destiny</title>
+  <link href="mystyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+ //write your code here
+ <header>
+   <h1>Registration Form</h1>
+ </header>
+ <div id="container">
+ <form name="input">
+   Name:<input type="text" name="name">
+   Date of Birth:<input type="date" name="date">
+   country:<select>
+     <option value="India">India</option>
+     <option value="United States">United States</option>
+     <option value="United Kingdom">United Kingdom</option>
+     <option value="Australia">Australia</option>
+     <option value="France">France</option>
+     </select>
+   Phone number:<input type="tel" name="no">
+   Email:<input type="email" name="email">
+   website:<input type="url" name="website">
+   <button type="submit">Submit</button>
+   </div>
+ </form>
+</body>
+</html>

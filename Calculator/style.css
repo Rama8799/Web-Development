@@ -3,6 +3,25 @@
   padding: 0;
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bdc3c7), to(#2c3e50));
+  background: linear-gradient(#bdc3c7, #2c3e50);
+  font-family: sans-serif;
+}
+
 html {
   height: 100%;
 }
@@ -12,12 +31,6 @@ h1 {
   font-weight: 500;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-left: 20px;
-}
-
-body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#bdc3c7), to(#2c3e50));
-  background: linear-gradient(#bdc3c7, #2c3e50);
-  font-family: sans-serif;
 }
 
 #calci {

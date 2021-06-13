@@ -8,8 +8,8 @@ deaths_today = document.getElementById("deaths_today");
 recovered_today = document.getElementById("recovered_today");
 active_cases_today = document.getElementById("active_cases_today");
 critical_cases_today = document.getElementById("critical_cases_today");
-country = document.getElementById("country");
-//find = document.getElementById("btn-search");
+//country = document.getElementById("country");
+theme_toggler = document.getElementById("btn-toggle");
 header = document.getElementById("header");
 
 window.addEventListener('load', () => {
@@ -19,8 +19,7 @@ window.addEventListener('load', () => {
             var len = data["cases_time_series"].length;
             var yesterday = data["cases_time_series"][len-1];
             var day_before_yesterday = data["cases_time_series"][len-2];
-           console.log(data["cases_time_series"][len-1]);
-           var cases_difference = yesterday["dailyconfirmed"] - day_before_yesterday["dailyconfirmed"];
+            var cases_difference = yesterday["dailyconfirmed"] - day_before_yesterday["dailyconfirmed"];
            var deaths_difference = yesterday["dailydeceased"] - day_before_yesterday["dailydeceased"];
            var recovered_difference = yesterday["dailyrecovered"] - day_before_yesterday["dailyrecovered"];
 
@@ -55,4 +54,9 @@ window.addEventListener('load', () => {
             active_cases_today.innerHTML = `Active Cases : ${data.active}`;
             critical_cases_today.innerHTML = `Critical Cases : ${data.critical}`;
         });
+});
+
+theme_toggler.addEventListener('click', () => {
+    console.log(1);
+    document.body.classList.toggle('dark');
 });

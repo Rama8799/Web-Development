@@ -22,7 +22,7 @@ window.addEventListener('load', () => {
             var cases_difference = yesterday["dailyconfirmed"] - day_before_yesterday["dailyconfirmed"];
            var deaths_difference = yesterday["dailydeceased"] - day_before_yesterday["dailydeceased"];
            var recovered_difference = yesterday["dailyrecovered"] - day_before_yesterday["dailyrecovered"];
-
+           console.log(data["statewise"][32]);
            var casesClass = cases_difference>0 ? "red fa-arrow-up" : "green fa-arrow-down";
            var deathsClass = deaths_difference>0 ? "red fa-arrow-up" : "green fa-arrow-down";
            var recoveredClass = recovered_difference>0 ? "green fa-arrow-up" : "red fa-arrow-down";
@@ -59,4 +59,5 @@ window.addEventListener('load', () => {
 theme_toggler.addEventListener('click', () => {
     console.log(1);
     document.body.classList.toggle('dark');
+    theme_toggler.classList.toggle('dark');
 });

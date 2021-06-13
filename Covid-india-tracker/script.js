@@ -28,9 +28,11 @@ window.addEventListener('load', () => {
            var deathsClass = deaths_difference>0 ? "red fa-arrow-up" : "green fa-arrow-down";
            var recoveredClass = recovered_difference>0 ? "green fa-arrow-up" : "red fa-arrow-down";
            //console.log(casesClass,deathsClass,recoveredClass);
-            cases.innerHTML=`Cases : ${yesterday["totalconfirmed"]} <i class="fas ${casesClass}"></i> <span>${Math.abs(cases_difference)}</span>`;
-            deaths.innerHTML=`Deaths : ${yesterday["totaldeceased"]} <i class="fas ${deathsClass}"></i> <span>${Math.abs(deaths_difference)}</span>`;
-            recovered.innerHTML=`Recovered : ${yesterday["totalrecovered"]} <i class="fas ${recoveredClass}"></i> <span>${Math.abs(recovered_difference)}</span>`;
+            cases.innerHTML=`Cases : ${yesterday["totalconfirmed"]} <i class="fas fa-arrow-up red"></i> <span class="yesterdayCases">${yesterday["dailyconfirmed"]}</span> <i class="fas ${casesClass} fa-xs"></i> <span class="casesDiff">${Math.abs(cases_difference)}</span>`;
+            
+            deaths.innerHTML=`Deaths : ${yesterday["totaldeceased"]}  <i class="fas fa-arrow-up red"></i> <span class="yesterdayCases">${yesterday["dailydeceased"]}</span> <i class="fas ${deathsClass} fa-xs"></i> <span class="casesDiff">${Math.abs(deaths_difference)}</span>`;
+            
+            recovered.innerHTML=`Recovered : ${yesterday["totalrecovered"]}  <i class="fas fa-arrow-up green"></i> <span class="yesterdayCases">${yesterday["dailyrecovered"]}</span> <i class="fas ${recoveredClass} fa-xs"></i> <span class="casesDiff">${Math.abs(recovered_difference)}</span>`;
         });
 });
 

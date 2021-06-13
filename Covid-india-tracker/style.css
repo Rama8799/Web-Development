@@ -102,7 +102,14 @@ span {
 
 .contents span {
   display: inline;
+}
+
+.contents .yesterdayCases {
   font-size: 15px;
+}
+
+.contents .casesDiff {
+  font-size: 12px;
 }
 
 .today {

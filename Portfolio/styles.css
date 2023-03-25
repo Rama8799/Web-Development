@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-height : 100vh;
+    background-color: #a1c3ff;
+}
+
+.container {
+    max-width : 900px;
+    margin : 0px auto;
+}
+
+img {
+    height : 75px;
+    border-radius : 50%;
+}
+
+.navbar {
+    height : 85px;
+    background-color : #3474e6;
+    color : #fff;
+    /*position : fixed;
+    top : 0px;
+    width : 100%;*/
+}
+
+.navbar .container {
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    height : 100%;
+}
+
+.navbar .logo{
+    text-transform: uppercase;
+    font-size : 20px;
+    font-weight : bold;
+    margin-left : 5px;
+}
+
+.navbar .logo:hover {
+    color : lightblue;
+    cursor : pointer;
+}
+
+.content {
+    min-height : calc(100vh - 150px);
+}
+
+header p {
+    text-align : center;
+    padding : 40px 0px;
+    font-size : 25px;
+}
+
+section .container {
+    display : grid;
+    grid-template-columns: 1fr 0.8fr 1fr;
+    gap : 10px;
+}
+
+section p {
+    line-height: 1.75rem;
+}
+
+.box {
+    border : 2px solid #333;
+    border-radius : 5px;
+    padding : 15px 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.box-header {
+    display : flex;
+    justify-content : center;
+}
+
+.box h2 {
+    padding-bottom : 10px;
+    padding-left : 10px;
+}
+
+.box p {
+    text-align : center;
+}
+
+span {
+    font-weight : bold;
+}
+
+#experience p {
+    line-height : 2.5rem;
+}
+
+#skills p {
+    line-height : 2.5rem;
+}
+
+section .project {
+    min-height : calc(100vh - 150px);
+}
+
+section .project-header {
+    width : 100%;
+}
+
+.project-header h2 {
+    text-align: center;
+    padding-bottom : 20px;
+}
+
+.project i {
+    margin-right : 10px;
+}
+
+.project a {
+    display : block;
+    text-decoration: none;
+    text-align : center;
+}
+
+.pill {
+    font-weight : normal;
+    font-size : 13px;
+    border : 2px solid #000;
+    border-radius : 5px;
+    padding : 1.5px;
+}
+
+footer {
+    height : 50px;
+    width : 100%;
+    background-color: #3474e6;
+    margin-top : 20px;
+}
+
+footer .container {
+    max-width : 100px;
+    height : 100%;
+}
+
+footer ul {
+    display : flex;
+    justify-content : space-around;
+    align-items : center;
+    height : 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+i {
+    color : black;
+}
+
+section i {
+    font-size : 20px;
+}
+
+ul i {
+    font-size : 20px;
+}
+
+ul li:hover {
+    transform : scale(1.1);
+}
+
+
+@media (max-width : 700px) {
+    section .container {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        max-width : 250px;
+    }
+
+    footer {
+        margin-top : 10px;
+    }
+
+    .project-header {
+        margin-top : 15px;
+    }
+
+    
+}
+
+
+

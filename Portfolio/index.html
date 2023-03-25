@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel = "stylesheet" href = "./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--link rel="stylesheet" href="../fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/css/fontawesome.css"-->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Portfolio</div>
+            <div class="profile"><img src="./Rama.jpg" alt="Photo"></div>
+        </div>
+    </nav>
+    <div class="content">
+        <header>
+            <div class="container">
+                <p>Hi I'm Rama Subramanian <br>Web Developer</p>
+            </div>
+        </header>
+    
+        <section>
+            <div class="container">
+                <div class="box" id="education">
+                    <div class="box-header">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h2>Education</h2>
+                    </div>
+                    <p><span>Under Grad</span> : Electronics at MIT Chennai</p>
+                    <p><span>CGPA</span> : 9.01</p>
+                    <p><span>High School</span> : Maths + Computer Science</p>
+                    <p><span>Percentage</span> : 98</p>
+                </div>
+                <div class="box" id="experience">
+                    <div class="box-header">
+                        <i class="fa-solid fa-building"></i>
+                        <h2>Work</h2>
+                    </div>
+                    <p><span>Organization</span> : TCS</p>
+                    <p><span>Role</span> : Quality Assurance</p>
+                    <p><span>YoE</span> : 2</p>
+                </div>
+                <div class="box" id="skills">
+                    <div class="box-header">
+                        <i class="fa-solid fa-puzzle-piece"></i>
+                        <h2>Tech Skills</h2>
+                    </div>
+                    <p><span>Prog Languages</span> : <span class="pill">C++</span> <span class="pill">JS</span></p>
+                    <p><span>Web Dev</span> : <span class="pill">HTML5</span> <span class="pill">CSS3</span></p>
+                    <p><span>Other Skills</span> : <span class="pill">QA</span> <span class="pill">Selenium</span></p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <section class="project">
+        <div class="project-header">
+            <h2><i class="fa-solid fa-code"></i>Projects</h2>
+        </div>
+        <div class="container">
+            <div class="box">
+                <div class="box-header">
+                    <i class="fa-solid fa-virus-covid"></i>
+                    <h2>Covid Tracker</h2>
+                </div>
+                <p>Simple web page which displays the Covid history (New Cases, Active cases and deaths) of the selected country</p>
+                <p><span>Tech Used</span> : HTML5, CSS3 & Vanilla JS</p>
+                <a href="https://github.com/Rama8799/Web-Development/tree/master/Covid-tracker" target="_blank">Github code Link</a>
+            </div>
+            <div class="box">
+                <div class="box-header">
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Line follower Bot</h2>
+                </div>
+                <p>A line follower bot which tracks the black tape route to the destination</p>
+                <p><span>Comp Used</span> : Arduino & L298N driver</p>
+            </div>
+            <div class="box">
+                <div class="box-header">
+                    <i class="fa-solid fa-leaf"></i>
+                    <h2>Leaf Disease detection using Image processing</h2>
+                </div>
+                <p>Created a system in which we can take an image of a leaf in Android phone and send it to laptop via Socket connection to find the Type of disease and severity of the disease which is coded in Matlab</p>
+                <p><span>Tech Used</span> : Matlab, Android Studio, JAVA Socket Connection</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+           <ul id="profile">
+            <li><a href="https://www.instagram.com/rama_8799/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/rama-subramanian-m-990250146/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/Rama8799" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

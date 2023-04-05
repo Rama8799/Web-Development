@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    max-width : 900px;
+    max-width : 1000px;
     margin : 0px auto;
 }
 
@@ -62,7 +62,7 @@ header p {
 
 section .container {
     display : grid;
-    grid-template-columns: 1fr 0.8fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap : 10px;
 }
 
@@ -73,7 +73,7 @@ section p {
 .box {
     border : 2px solid #333;
     border-radius : 5px;
-    padding : 15px 5px;
+    padding : 15px 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -174,13 +174,13 @@ ul li:hover {
 }
 
 
-@media (max-width : 700px) {
+@media (max-width : 500px) {
     section .container {
         grid-template-columns: 1fr;
     }
 
     .container {
-        max-width : 250px;
+        max-width : 300px;
     }
 
     footer {
@@ -190,8 +190,16 @@ ul li:hover {
     .project-header {
         margin-top : 15px;
     }
+}
 
-    
+@media (min-width : 501px) and (max-width : 1000px) {
+    section .container {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        max-width : 600px;
+    }
 }
 
 
